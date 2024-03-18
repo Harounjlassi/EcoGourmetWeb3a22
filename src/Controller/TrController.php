@@ -8,6 +8,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class TrController extends AbstractController
 {
+
+    // Exemple of evenInegration du emplate
     #[Route('/tr', name: 'app_tr')]
     public function index(): Response
     {
