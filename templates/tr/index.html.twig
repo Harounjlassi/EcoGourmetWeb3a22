@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+
+
+    {% block sectionTopBar %}
+        <section id="topbar" class="d-flex align-items-center fixed-top ">
+            <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+              <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
+              <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00 PM</span></i>
+            </div>
+          </section>
+    {% endblock %}
+    
+    {% block header %}
+        <header id="header" class="fixed-top d-flex align-items-center ">
+            <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        
+              <div class="logo me-auto">
+                <h1><a href="index.html">EcoGourmet</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+              </div>
+        
+              <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">utilisateurs</a></li>
+                    <li><a class="nav-link scrollto" href="#menu">Annonce</a></li>
+                    <li><a class="nav-link scrollto" href="{{path('app_tr') }}">Evenement</a></li>
+                    <li><a class="nav-link scrollto" href="#events">Panier</a></li>
+                    <li><a class="nav-link scrollto" href="#chefs">Livration</a></li>
+                    <li><a class="nav-link scrollto" href="#gallery"></a></li>
+              </nav><!-- .navbar -->
+        
+        
+            </div>
+          </header><!-- End Header -->{% endblock %}
+    {% block sectionDocument %}
+    {% endblock %}
+    {% block mainDocument %}
+        <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Evenement</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Evenement</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+      <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+
+{% endblock %}
