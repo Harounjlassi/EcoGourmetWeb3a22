@@ -100,7 +100,11 @@
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body flex-grow-1">
-          <form class="add-new-record pt-0 row g-2 fv-plugins-bootstrap5 fv-plugins-framework" id="form-add-new-record" onsubmit="return false" novalidate="novalidate">
+          {{ include('events/_form.html.twig') }}
+          
+    <a href="{{ path('app_events_index') }}">back to list</a>
+
+    {# <form class="add-new-record pt-0 row g-2 fv-plugins-bootstrap5 fv-plugins-framework" id="form-add-new-record" onsubmit="return false" novalidate="novalidate">
             <div class="col-sm-12 fv-plugins-icon-container">
               <label class="form-label" for="basicFullname">Full Name</label>
               <div class="input-group input-group-merge has-validation">
@@ -143,7 +147,7 @@
               <button type="submit" class="btn btn-primary data-submit me-sm-3 me-1">Submit</button>
               <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">Cancel</button>
             </div>
-          <input type="hidden"></form>
+          <input type="hidden"></form> #}
       
         </div>
       </div>

@@ -36,7 +36,7 @@ class Votes
     private $voteValue;
 
     /**
-     * @var \User
+     * @var App\Entity\User
      *
      * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumns({

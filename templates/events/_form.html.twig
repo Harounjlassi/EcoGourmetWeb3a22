@@ -1,0 +1,95 @@
+{# {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }} #}
+
+
+
+{# {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }} #}
+
+
+
+    {{ form_start( form,{'attr': {'class':'form-horizontal','novalidate':'novalidate'}} ) }}
+
+    <div class="col-sm-12 fv-plugins-icon-container">
+        <label class="form-label" for="basicFullname">    {{ form_label(form.name) }}            </label>
+        <div class="input-group input-group-merge has-validation">
+          <span id="basicFullname2" class="input-group-text"><i class="bx bx-file-blank"></i></span>
+          {# <input type="text" id="basicFullname" class="form-control dt-full-name" name="basicFullname" placeholder="John Doe" aria-label="John Doe" aria-describedby="basicFullname2"> #}
+          {{ form_widget(form.name) }}
+
+          </div><div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+      </div>
+      {{ form_errors(form.name) }}
+   <div class="col-sm-12 fv-plugins-icon-container">
+        <label class="form-label" for="basicDate">  {{ form_label(form.date) }}    </label>
+        <div class="input-group input-group-merge has-validation">
+          <span id="basicDate2" class="input-group-text"><i class="bx bx-calendar"></i></span>
+          {# <input type="text" class="form-control dt-date flatpickr-input" id="basicDate" name="basicDate" aria-describedby="basicDate2" placeholder="MM/DD/YYYY" aria-label="MM/DD/YYYY" readonly="readonly"> #}
+          {{ form_widget(form.date) }}
+          </div><div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+      </div>
+
+
+      <div class="col-sm-12 fv-plugins-icon-container">
+        <label class="form-label" for="basicSalary">{{ form_label(form.location) }}  </label>
+        <div class="input-group input-group-merge has-validation">
+            <span id="basicSalary2" class="input-group-text"><i class="bx bx-map"></i></span>
+            {# <input type="number" id="basicSalary" name="basicSalary" class="form-control dt-salary" placeholder="12000" aria-label="12000" aria-describedby="basicSalary2"> #}
+          {{ form_widget(form.location) }}
+
+        
+          </div><div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+      </div>
+      <div class="col-sm-12 fv-plugins-icon-container">
+        <label class="form-label" for="basicPost">     {{ form_label(form.photo) }}</label>
+        <div class="input-group input-group-merge has-validation">
+            <span id="basicSalary2" class="input-group-text"><i class="bx bx-image"></i></span>
+            {{ form_widget(form.photo) }}
+
+          
+          {# <input type="text" id="basicPost" name="basicPost" class="form-control dt-post" placeholder="Web Developer" aria-label="Web Developer" aria-describedby="basicPost2"> #}
+        </div><div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+      </div>
+      {{ form_label(form.category) }}
+
+      {{ form_widget(form.category) }}
+
+
+        
+   {# {{ form_rest(form) }}  #}
+
+
+
+{#    
+      <div class="col-sm-12 fv-plugins-icon-container">
+        <label class="form-label" for="basicPost">Post</label>
+        <div class="input-group input-group-merge has-validation">
+          <span id="basicPost2" class="input-group-text"><i class="bx bxs-briefcase"></i></span>
+          <input type="text" id="basicPost" name="basicPost" class="form-control dt-post" placeholder="Web Developer" aria-label="Web Developer" aria-describedby="basicPost2">
+        </div><div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+      </div>
+
+      <div class="col-sm-12 fv-plugins-icon-container">
+        <label class="form-label" for="basicEmail">Email</label>
+        <div class="input-group input-group-merge has-validation">
+          <span class="input-group-text"><i class="bx bx-envelope"></i></span>
+          <input type="text" id="basicEmail" name="basicEmail" class="form-control dt-email" placeholder="john.doe@example.com" aria-label="john.doe@example.com">
+        </div><div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+        <div class="form-text">
+          You can use letters, numbers &amp; periods
+        </div> #}
+
+     
+
+
+      <div class="col-sm-12">
+        <button type="submit" class="btn btn-primary data-submit me-sm-3 me-1">{{ button_label|default('Save') }}</button>
+        <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">Cancel</button>
+      </div>
+    <input type="hidden">
+    </div>
+    {{ form_end(form) }}
+
