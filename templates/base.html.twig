@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>EcoGourmet</title>
+  <title>{%block PageTitle %}EcoGourmet {% endblock %}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -921,7 +921,7 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+{% block script %}
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -931,7 +931,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+{%endblock %}
 </body>
 
 </html>
